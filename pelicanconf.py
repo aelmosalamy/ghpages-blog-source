@@ -31,8 +31,8 @@ AUTHOR_FEED_RSS = None
 DELETE_OUTPUT_DIRECTORY = True
 
 # Articles
-ARTICLE_URL = '/{slug}/'
-ARTICLE_SAVE_AS = '{slug}/index.html'
+ARTICLE_URL = '/blog/{slug}.html'
+ARTICLE_SAVE_AS = 'blog/{slug}.html'
 ARTICLE_ORDER_BY = 'reversed-date'
 
 DEFAULT_PAGINATION = 9
@@ -55,6 +55,8 @@ BOOTSTRAPIFY = {
     'img': ['img-fluid'],
     'blockquote': ['blockquote'],
 }
+
+TYPOGRIFY = True
 
 USE_FOLDER_AS_CATEGORY = True
 

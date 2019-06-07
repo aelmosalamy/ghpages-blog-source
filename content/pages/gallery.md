@@ -2,7 +2,7 @@ Title: Gallery
 Date: 29-05-2019 21:12
 Slug: gallery
 
-A growing gallery of artistic creations I make from time to time, Enjoy!
+A growing gallery of "artistic" creations I make from time to time, Enjoy!
 
 ---
 
