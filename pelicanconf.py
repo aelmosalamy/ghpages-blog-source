@@ -31,9 +31,12 @@ AUTHOR_FEED_RSS = None
 DELETE_OUTPUT_DIRECTORY = True
 
 # Articles
-ARTICLE_URL = '/blog/{slug}.html'
-ARTICLE_SAVE_AS = 'blog/{slug}.html'
+ARTICLE_URL = 'blog/{slug}/'
+ARTICLE_SAVE_AS = 'blog/{slug}/index.html'
 ARTICLE_ORDER_BY = 'reversed-date'
+
+PAGE_URL = 'pages/{slug}/'
+PAGE_SAVE_AS = 'pages/{slug}/index.html'
 
 DEFAULT_PAGINATION = 9
 
@@ -48,7 +51,7 @@ GITHUB_URL = "https://github.com/aelmosalamy"
 DISQUS_SITENAME = "elmosalamy"
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['pelican-bootstrapify', 'pelican_albums']
+PLUGINS = ['pelican-bootstrapify']
 
 BOOTSTRAPIFY = {
     'table': ['table', 'table-striped', 'table-hover'],
