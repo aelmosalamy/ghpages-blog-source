@@ -1,4 +1,5 @@
 ﻿Title: Python List Comprehensions!
+Author: Adham Elmosalamy
 Date: 2019-01-07 08:58
 Tags: python, tips
 Slug: python-list-comprehensions
@@ -7,10 +8,10 @@ What's up everybody! In this post I am going to show you an interesting tip whic
 
 ```python
 def square(numbers):
-    output = []              # Empty list for storing processed numbers 
-    for n in numbers:        # Iterating over that number list
-        output.append(n * n) # Appending the square to our output list
-    return output            # Returning the final output
+    output = []              # Empty list for storing numbers 
+    for n in numbers:        # Iterate over all numbers
+        output.append(n * n) # Self-explanatory
+    return output            # Look previous comment
 ```
 
 Now if we run it..
@@ -45,15 +46,15 @@ You can use the exact same syntax as so:
 
 ```python
 prices = {'apple': 5, 'sandwich': 15, 'almond': 3}
-shopping_cart = ['apple', 'apple', 'almond', 'apple', 'sandwich']
+shopping_cart = ['apple', 'almond', 'apple', 'sandwich']
 total_cost = sum([prices[item] for item in shopping_cart])
-# Output: 33
+# Output: 28
 ```
 
 We can even apply the exact same syntax with dictionaries, with `key:value` pairs as follows:
 
 ```python
-{x: x*5 for x in range(1, 6)}
+{x: x * 5 for x in range(1, 6)}
 {1: 5, 2: 10, 3: 15, 4: 20, 5: 25}
 ```
 

@@ -3,16 +3,21 @@
 from __future__ import unicode_literals
 
 AUTHOR = 'Adham Elmosalamy'
-HIDE_AUTHORS = True
-SITENAME = 'aelmosalamy'
-SITESUBTITLE = "A passionate learner and a curious creator"
+
+HIDE_AUTHORS = False
+SITENAME = 'Adham Elmosalamy'
+SITESUBTITLE = "Welcome to the blog!"
 SITEURL = ''
 
 LOAD_CONTENT_CACHE = False
 CACHE_CONTENT = False
 
+SOCIAL = (('twitter', 'https://twitter.com/aelmosalamy_'),
+          ('github', 'https://github.com/aelmosalamy'),
+          ('instagram', 'https://www.instagram.com/aelmosalam.y/'))
+
 PATH = 'content'
-STATIC_PATHS = ['images', 'pdfs']
+STATIC_PATHS = ['images', 'extra']
 
 TIMEZONE = 'Europe/Paris'
 
@@ -43,12 +48,8 @@ DEFAULT_PAGINATION = 9
 # Blogroll
 LINKS = ()
 
-# Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
-
 GITHUB_URL = "https://github.com/aelmosalamy"
-DISQUS_SITENAME = "elmosalamy"
+DISQUS_SITENAME = "aelmosalamy-github-io"
 
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['pelican-bootstrapify']
@@ -68,11 +69,28 @@ RELATIVE_URLS = True
 
 # Theme settings ------------------------------------------------------------
 
-THEME = "alchemy"
+THEME = "attila"
 
-SITEIMAGE = "/images/profile.png width=200 height=200"
+SHOW_SOCIAL_ON_INDEX_PAGE_HEADER = False
+DISPLAY_PAGES_ON_MENU = True
 
-ICONS = [
-    ('github', GITHUB_URL),
-    ('instagram', 'https://www.instagram.com/aelmosalam.y/')
-]
+# Color scheme uses Pygments
+COLOR_SCHEME_CSS = "paraiso-dark"
+
+CSS_OVERRIDE = ["css/custom.css"]
+
+# Useful theme settings
+# HEADER_COVERS_BY_TAG
+# HOME_COVER
+
+AUTHORS_BIO = {
+  "adham elmosalamy": {
+    "name": "Adham Elmosalamy",
+    "cover": "/images/avatar.png",
+    "image": "/images/avatar.png",
+    "github": "aelmosalamy",
+    "twitter": "aelmosalamy_",
+    "location": "Alexandria",
+    "bio": "I like reading, mathematics, coding and teaching stuff."
+  }
+}
