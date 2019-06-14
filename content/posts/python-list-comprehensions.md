@@ -3,6 +3,7 @@ Author: Adham Elmosalamy
 Date: 2019-01-07 08:58
 Tags: python, tips
 Slug: python-list-comprehensions
+Cover: /images/covers/post-bg.jpg
 
 What's up everybody! In this post I am going to show you an interesting tip which I rarely see young Pythonistas use, it's **List Comprehensions**. If you dabbled a little with Python you probably had some problems where you had to iterate over a list and perform functions to its elements on-the-run, I know. I make no sense. To clear things up let me start with a simple task. Given a list of numbers, return a list containing the squares of the original list's numbers, You might think: *"Well, That's easy!"* and write something as the following:
 

@@ -6,6 +6,7 @@
     {% include 'partials/jsonld.html' %}
 {% endblock %}
 
+{% if not page %}
 {% if HEADER_COVER %}
   {% if HEADER_COVER|lower|truncate(4, True, '') == "http" %}
     {% set selected_cover = HEADER_COVER %}
@@ -22,6 +23,7 @@
   {% set selected_color = HEADER_COLOR %}
 {% elif HOME_COLOR %}
   {% set selected_color = HOME_COLOR %}
+{% endif %}
 {% endif %}
 
 {% block header %}

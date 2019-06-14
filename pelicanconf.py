@@ -17,6 +17,7 @@ SOCIAL = (('twitter', 'https://twitter.com/aelmosalamy_'),
           ('instagram', 'https://www.instagram.com/aelmosalam.y/'))
 
 PATH = 'content'
+PAGE_PATHS = ['pages']
 STATIC_PATHS = ['images', 'extra']
 
 TIMEZONE = 'Europe/Paris'
@@ -79,14 +80,17 @@ COLOR_SCHEME_CSS = "paraiso-dark"
 
 CSS_OVERRIDE = ["css/custom.css"]
 
+# COVER IMAGES
+HOME_COVER = "/images/covers/home-bg.jpg"
+
 # Useful theme settings
 # HEADER_COVERS_BY_TAG
-# HOME_COVER
+# HEADER_COVERS_BY_CATEGORY
 
 AUTHORS_BIO = {
   "adham elmosalamy": {
     "name": "Adham Elmosalamy",
-    "cover": "/images/avatar.png",
+    "cover": "/images/covers/post-bg.jpg",
     "image": "/images/avatar.png",
     "github": "aelmosalamy",
     "twitter": "aelmosalamy_",

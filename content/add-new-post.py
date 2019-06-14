@@ -4,7 +4,11 @@ def main():
     import string, sys
     from datetime import datetime
 
-    article_metadata = {"Title": '', "Date": '', "Tags": '',"Slug": ''}
+    article_metadata = {"Title": '',
+                        "Date": '',
+                        "Tags": '',
+                        "Slug": '',
+                        "Cover": '/images/covers/post-bg.jpg'}
 
     template = ""
     PLACEHOLDER_LINE = "*This is a placeholder, place your content here.*"
@@ -35,6 +39,22 @@ def main():
         else:
             print("Retry: empty input!")
 
+    # set cover img location
+    while True:
+        cover_loc = input("Cover Image Name (must be inside /images/covers/): ")
+        if cover_loc:
+            if confirmed(cover_loc):
+                article_metadata['Cover'] = "/images/covers/" + cover_loc
+                break
+            else:
+                continue
+        else:
+            if confirmed("Use default cover image"):
+                print("Default cover image will be used 'post-bg.jpg'")
+                break
+            else:
+                continue
+        
     # set date
     article_metadata['Date'] = datetime.now().strftime("%d-%m-%Y %H:%M")
 
@@ -56,7 +76,7 @@ def main():
     with open("posts/{}.md".format(article_metadata["Slug"]), 'w') as f:
         f.write(template)
 
-    print('"{}.md" was successfully created in the current directory'.format(article_metadata['Slug']))
+    print('"{}.md" was successfully created in the "posts/" directory'.format(article_metadata['Slug']))
     input("exit...")
 
 def confirmed(user_input):

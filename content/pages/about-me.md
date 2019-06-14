@@ -1,7 +1,6 @@
 Title: About Me
-Author: Adham Elmosalamy
-Date: 2019-5-28
 Slug: about-me
+cover: images/covers/about-bg.jpg
 
 Hello there, I am Adham Elmosalamy aka *aelmosalamy* and this is my personal blog.
 
