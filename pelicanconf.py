@@ -37,8 +37,8 @@ AUTHOR_FEED_RSS = None
 DELETE_OUTPUT_DIRECTORY = True
 
 # Articles
-ARTICLE_URL = '{slug}'
-ARTICLE_SAVE_AS = 'blog/{slug}.html'
+ARTICLE_URL = '{slug}/'
+ARTICLE_SAVE_AS = '{slug}/index.html'
 ARTICLE_ORDER_BY = 'reversed-date'
 
 PAGE_URL = 'pages/{slug}/'
