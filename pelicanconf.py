@@ -5,22 +5,21 @@ from __future__ import unicode_literals
 AUTHOR = 'Adham Elmosalamy'
 
 HIDE_AUTHORS = False
-SITENAME = 'Adham Elmosalamy'
-SITESUBTITLE = "Welcome to the blog!"
+SITENAME = '@elmosalamy'
+# SITESUBTITLE = "Welcome to the blog!"
 SITEURL = ''
+
+THEME = "pelican-bootstrap3"
 
 LOAD_CONTENT_CACHE = False
 CACHE_CONTENT = False
 
-SOCIAL = (('twitter', 'https://twitter.com/aelmosalamy_'),
-          ('github', 'https://github.com/aelmosalamy'),
-          ('instagram', 'https://www.instagram.com/aelmosalam.y/'))
+SOCIAL = (('Github', 'https://github.com/aelmosalamy'),
+          ('Stackoverflow', 'https://stackoverflow.com/users/8249904/aelmosalamy', 'stack-overflow'))
 
 PATH = 'content'
 PAGE_PATHS = ['pages']
 STATIC_PATHS = ['images', 'extra']
-
-TIMEZONE = 'Europe/Paris'
 
 DEFAULT_LANG = 'en'
 
@@ -44,7 +43,10 @@ ARTICLE_ORDER_BY = 'reversed-date'
 PAGE_URL = 'pages/{slug}/'
 PAGE_SAVE_AS = 'pages/{slug}/index.html'
 
+ARCHIVES_SAVE_AS = 'archives.html'
+
 DEFAULT_PAGINATION = 9
+DISPLAY_PAGES_ON_MENU = True
 
 # Blogroll
 LINKS = ()
@@ -53,7 +55,7 @@ GITHUB_URL = "https://github.com/aelmosalamy"
 DISQUS_SITENAME = "aelmosalamy-github-io"
 
 PLUGIN_PATHS = ['plugins']
-PLUGINS = ['pelican-bootstrapify']
+PLUGINS = ['pelican-bootstrapify', 'i18n_subsites', 'tag_cloud']
 
 BOOTSTRAPIFY = {
     'table': ['table', 'table-striped', 'table-hover'],
@@ -70,22 +72,45 @@ RELATIVE_URLS = True
 
 # Theme settings ------------------------------------------------------------
 
-THEME = "attila"
+BOOTSTRAP_THEME = 'cosmo'
 
-SHOW_SOCIAL_ON_INDEX_PAGE_HEADER = False
-DISPLAY_PAGES_ON_MENU = True
+JINJA_ENVIRONMENT = {
+    'extensions': ['jinja2.ext.i18n'],
+}
+
+# Some info about me
+ABOUT_ME = "I am a programmer and graphic designer who enjoys teaching and sharing knowledge."
+AVATAR = "images/avatar.png"
+
+# Banner settings
+# BANNER = 'images/covers/post-bg.jpg'
+# BANNER_SUBTITLE = 'Welcome to the blog!'
+
+# Display site hierarchy above each post
+DISPLAY_BREADCRUMBS = True
+DISPLAY_CATEGORY_IN_BREADCRUMBS = True
+
+# Aqua navigation bar
+BOOTSTRAP_NAVBAR_INVERSE = True
+
+DISPLAY_ARTICLE_INFO_ON_INDEX  = True
+
+### Sidebar settings ###
+# Tags
+DISPLAY_TAGS_ON_SIDEBAR = True
+tag_cloud = True
+# Recent posts
+DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
+RECENT_POST_COUNT = 5
+# GitHub repos
+GITHUB_USER = 'aelmosalamy'
+
+#Social and engagement
+ADDTHIS_PROFILE = 'ra-5d0d207d4d38595c'
+DISQUS_DISPLAY_COUNTS = False
 
 # Color scheme uses Pygments
-COLOR_SCHEME_CSS = "paraiso-dark"
-
-CSS_OVERRIDE = ["css/custom.css"]
-
-# COVER IMAGES
-HOME_COVER = "/images/covers/home-bg.jpg"
-
-# Useful theme settings
-# HEADER_COVERS_BY_TAG
-# HEADER_COVERS_BY_CATEGORY
+PYGMENTS_STYLE = "paraiso-dark"
 
 AUTHORS_BIO = {
   "adham elmosalamy": {
