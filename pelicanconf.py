@@ -7,7 +7,7 @@ AUTHOR = 'Adham Elmosalamy'
 HIDE_AUTHORS = False
 SITENAME = '@elmosalamy'
 # SITESUBTITLE = "Welcome to the blog!"
-SITEURL = ''
+SITEURL = 'https://aelmosalamy.github.io'
 
 THEME = "pelican-bootstrap3"
 
