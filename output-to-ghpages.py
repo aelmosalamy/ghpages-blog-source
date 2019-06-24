@@ -8,7 +8,7 @@ import os
 CLEANUP_BEFORE_COPYING = True
 
 # runs pelican to convert "content" into "output"
-os.system("pelican")
+os.system("make publish")
 print("Pelican site published!")
 
 if CLEANUP_BEFORE_COPYING:

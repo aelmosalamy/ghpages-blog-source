@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = 'Adham Elmosalamy'
 
 HIDE_AUTHORS = False
-SITENAME = '@elmosalamy'
+SITENAME = 'elmosalamy'
 # SITESUBTITLE = "Welcome to the blog!"
 SITEURL = 'https://aelmosalamy.github.io'
 
@@ -52,7 +52,6 @@ DISPLAY_PAGES_ON_MENU = True
 LINKS = ()
 
 GITHUB_URL = "https://github.com/aelmosalamy"
-DISQUS_SITENAME = "aelmosalamy-github-io"
 
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['pelican-bootstrapify', 'i18n_subsites', 'tag_cloud']
@@ -106,7 +105,6 @@ RECENT_POST_COUNT = 5
 GITHUB_USER = 'aelmosalamy'
 
 #Social and engagement
-ADDTHIS_PROFILE = 'ra-5d0d207d4d38595c'
 DISQUS_DISPLAY_COUNTS = False
 
 # Color scheme uses Pygments
