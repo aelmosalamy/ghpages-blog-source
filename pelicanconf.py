@@ -14,7 +14,7 @@ THEME = "pelican-bootstrap3"
 LOAD_CONTENT_CACHE = False
 CACHE_CONTENT = False
 
-SOCIAL = (('Github', 'https://github.com/aelmosalamy'),
+SOCIAL = (('GitHub', 'https://github.com/aelmosalamy', 'github'),
           ('Stackoverflow', 'https://stackoverflow.com/users/8249904/aelmosalamy', 'stack-overflow'))
 
 PATH = 'content'
@@ -80,6 +80,8 @@ JINJA_ENVIRONMENT = {
 # Some info about me
 ABOUT_ME = "I am a programmer and graphic designer who enjoys teaching and sharing knowledge."
 AVATAR = "images/avatar.png"
+
+CUSTOM_CSS = "custom.css"
 
 # Banner settings
 # BANNER = 'images/covers/post-bg.jpg'

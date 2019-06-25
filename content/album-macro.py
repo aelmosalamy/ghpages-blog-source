@@ -22,14 +22,14 @@ A growing gallery of artistic creations I make from time to time, Enjoy!
 
 ---
 
-
+<section id="photos">
 """.format(now.strftime("%d-%m-%Y %H:%M"))
 
     # collect all images as a list of filenames
     IMAGE_FILENAMES = os.listdir(IMAGE_DEST)
 
     # the paranthesis will be filled in with customised infromation later
-    IMAGE_TEMPLATE = '<a href="/{}/{}" title="{}" id="gallery-mybox" class="mybox"><img src="/{}/{}"></a>\n'
+    IMAGE_TEMPLATE = '<img id="gallery" src="/{}/{}">\n'
     # generate supported HTML img tags for each image with colorbox support
     image_tags = ""
     for name in IMAGE_FILENAMES:
@@ -38,13 +38,13 @@ A growing gallery of artistic creations I make from time to time, Enjoy!
         image_tags += image_link
 
     TEMPLATE += image_tags
-
+    TEMPLATE += "</section>"
     # writing our generated template to "gallery.md", creating it or overwriting existing files
     with open(OUTPUT_DEST, "w") as f:
         f.write(TEMPLATE)
 
-
-
+    print("Gallery code generated!")
+    
 # can be used for an improved sort by data created generation. (to be added)
 # def creation_date(path_to_file):
 #     """
@@ -65,4 +65,4 @@ A growing gallery of artistic creations I make from time to time, Enjoy!
 
 
 if __name__ == "__main__":
-    # main()
+    main()
