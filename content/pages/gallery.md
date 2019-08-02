@@ -1,5 +1,5 @@
 Title: Gallery
-Date: 25-06-2019 12:15
+Date: 02-08-2019 19:45
 Slug: gallery
 
 A growing gallery of artistic creations I make from time to time, Enjoy!
@@ -20,6 +20,7 @@ A growing gallery of artistic creations I make from time to time, Enjoy!
 <img id="gallery" src="/images/gallery/low-poly-landscape.png">
 <img id="gallery" src="/images/gallery/material-gold.png">
 <img id="gallery" src="/images/gallery/material-ruby.png">
+<img id="gallery" src="/images/gallery/mesh-gradient-background.png">
 <img id="gallery" src="/images/gallery/neon-khan.png">
 <img id="gallery" src="/images/gallery/phone-flat-art.png">
 <img id="gallery" src="/images/gallery/sandpile-algorithm.png">
