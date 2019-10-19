@@ -5,9 +5,9 @@ from __future__ import unicode_literals
 AUTHOR = 'Adham Elmosalamy'
 
 HIDE_AUTHORS = False
-SITENAME = 'elmosalamy'
+SITENAME = 'aelmosalamy'
 # SITESUBTITLE = "Welcome to the blog!"
-SITEURL = 'https://aelmosalamy.github.io'
+SITEURL = '/blog/'
 
 THEME = "pelican-bootstrap3"
 
@@ -67,7 +67,7 @@ TYPOGRIFY = True
 USE_FOLDER_AS_CATEGORY = True
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = True
+RELATIVE_URLS = False
 
 # Theme settings ------------------------------------------------------------
 
@@ -79,7 +79,7 @@ JINJA_ENVIRONMENT = {
 
 # Some info about me
 ABOUT_ME = "I am a programmer and graphic designer who enjoys teaching and sharing knowledge."
-AVATAR = "images/avatar.png"
+AVATAR = "/blog/images/avatar.png"
 
 CUSTOM_CSS = "custom.css"
 

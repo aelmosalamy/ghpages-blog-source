@@ -11,7 +11,7 @@ def main():
     now = datetime.now()
 
     # Set this to the destination of your images directory
-    IMAGE_DEST = "images/gallery"
+    IMAGE_DEST = "../../static/images/gallery"
     OUTPUT_DEST = "pages/gallery.md"
 
     TEMPLATE = """Title: Gallery
