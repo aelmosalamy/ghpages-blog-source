@@ -12,6 +12,7 @@ def main():
 
     # Set this to the destination of your images directory
     IMAGE_DEST = "../../static/images/gallery"
+    IMAGE_DEST_ON_SERVER = "images/gallery"
     OUTPUT_DEST = "pages/gallery.md"
 
     TEMPLATE = """Title: Gallery
@@ -34,7 +35,7 @@ A growing gallery of artistic creations I make from time to time, Enjoy!
     image_tags = ""
     for name in IMAGE_FILENAMES:
         # filling in the blanks using the filenames in our directory
-        image_link = IMAGE_TEMPLATE.format(IMAGE_DEST, name, name, IMAGE_DEST, name)
+        image_link = IMAGE_TEMPLATE.format(IMAGE_DEST_ON_SERVER, name)
         image_tags += image_link
 
     TEMPLATE += image_tags

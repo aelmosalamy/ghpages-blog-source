@@ -8,7 +8,7 @@ def main():
                         "Date": '',
                         "Tags": '',
                         "Slug": '',
-                        "Cover": '/images/covers/post-bg.jpg'}
+                        }
 
     template = ""
     PLACEHOLDER_LINE = "*This is a placeholder, place your content here.*"

@@ -7,7 +7,7 @@ AUTHOR = 'Adham Elmosalamy'
 HIDE_AUTHORS = False
 SITENAME = 'aelmosalamy'
 # SITESUBTITLE = "Welcome to the blog!"
-SITEURL = '/blog/'
+SITEURL = ''
 
 THEME = "pelican-bootstrap3"
 
@@ -19,7 +19,7 @@ SOCIAL = (('GitHub', 'https://github.com/aelmosalamy', 'github'),
 
 PATH = 'content'
 PAGE_PATHS = ['pages']
-STATIC_PATHS = ['images', 'extra']
+STATIC_PATHS = []
 
 DEFAULT_LANG = 'en'
 
@@ -40,8 +40,8 @@ ARTICLE_URL = '{slug}/'
 ARTICLE_SAVE_AS = '{slug}/index.html'
 ARTICLE_ORDER_BY = 'reversed-date'
 
-PAGE_URL = 'pages/{slug}/'
-PAGE_SAVE_AS = 'pages/{slug}/index.html'
+PAGE_URL = '{slug}/'
+PAGE_SAVE_AS = '{slug}/index.html'
 
 ARCHIVES_SAVE_AS = 'archives.html'
 
@@ -67,11 +67,11 @@ TYPOGRIFY = True
 USE_FOLDER_AS_CATEGORY = True
 
 # Uncomment following line if you want document-relative URLs when developing
-RELATIVE_URLS = False
+RELATIVE_URLS = True
 
 # Theme settings ------------------------------------------------------------
 
-BOOTSTRAP_THEME = 'cosmo'
+BOOTSTRAP_THEME = 'flatly' # Good ones: cyborg, flatly, cosmo
 
 JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.i18n'],
@@ -79,7 +79,7 @@ JINJA_ENVIRONMENT = {
 
 # Some info about me
 ABOUT_ME = "I am a programmer and graphic designer who enjoys teaching and sharing knowledge."
-AVATAR = "/blog/images/avatar.png"
+AVATAR = "../images/avatar.png"
 
 CUSTOM_CSS = "custom.css"
 
@@ -111,7 +111,7 @@ GITHUB_USER = 'aelmosalamy'
 DISQUS_DISPLAY_COUNTS = False
 
 # Color scheme uses Pygments
-PYGMENTS_STYLE = "paraiso-dark"
+PYGMENTS_STYLE = "default" # Good ones: paraiso-dark
 
 AUTHORS_BIO = {
   "adham elmosalamy": {
