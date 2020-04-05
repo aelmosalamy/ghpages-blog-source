@@ -14,8 +14,7 @@ THEME = "pelican-bootstrap3"
 LOAD_CONTENT_CACHE = False
 CACHE_CONTENT = False
 
-SOCIAL = (('GitHub', 'https://github.com/aelmosalamy', 'github'),
-          ('Stackoverflow', 'https://stackoverflow.com/users/8249904/aelmosalamy', 'stack-overflow'))
+# SOCIAL = (('GitHub', 'https://github.com/aelmosalamy', 'github'), ('Stackoverflow', 'https://stackoverflow.com/users/8249904/aelmosalamy', 'stack-overflow'))
 
 PATH = 'content'
 PAGE_PATHS = ['pages']
@@ -51,7 +50,7 @@ DISPLAY_PAGES_ON_MENU = True
 # Blogroll
 LINKS = ()
 
-GITHUB_URL = "https://github.com/aelmosalamy"
+# GITHUB_URL = "https://github.com/aelmosalamy"
 
 PLUGIN_PATHS = ['plugins']
 PLUGINS = ['pelican-bootstrapify', 'i18n_subsites', 'tag_cloud']
@@ -78,8 +77,8 @@ JINJA_ENVIRONMENT = {
 }
 
 # Some info about me
-ABOUT_ME = "I am a programmer and graphic designer who enjoys teaching and sharing knowledge."
-AVATAR = "../images/avatar.png"
+# ABOUT_ME = "I am a programmer and graphic designer who enjoys teaching and sharing knowledge."
+# AVATAR = "../images/avatar.png"
 
 CUSTOM_CSS = "custom.css"
 
@@ -103,16 +102,17 @@ tag_cloud = True
 DISPLAY_TAGS_INLINE = True
 # Recent posts
 DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
-RECENT_POST_COUNT = 5
+RECENT_POST_COUNT = 3
 # GitHub repos
-GITHUB_USER = 'aelmosalamy'
+# GITHUB_USER = 'aelmosalamy'
 
 #Social and engagement
-DISQUS_DISPLAY_COUNTS = False
+DISQUS_DISPLAY_COUNTS = True
 
 # Color scheme uses Pygments
 PYGMENTS_STYLE = "default" # Good ones: paraiso-dark
 
+'''
 AUTHORS_BIO = {
   "adham elmosalamy": {
     "name": "Adham Elmosalamy",
@@ -124,3 +124,4 @@ AUTHORS_BIO = {
     "bio": "I like reading, mathematics, coding and teaching stuff."
   }
 }
+'''

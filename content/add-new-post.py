@@ -73,7 +73,7 @@ def main():
     template += "\n" + PLACEHOLDER_LINE
 
     # write metadata to "{slug}.md" as destination
-    with open("posts/{}.md".format(article_metadata["Slug"]), 'w') as f:
+    with open("Posts/{}.md".format(article_metadata["Slug"]), 'w') as f:
         f.write(template)
 
     print('"{}.md" was successfully created in the "posts/" directory'.format(article_metadata['Slug']))
